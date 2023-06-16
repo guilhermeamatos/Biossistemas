@@ -1,0 +1,369 @@
+<html>
+<head>
+  <style>
+    h1 {
+      color: black;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2 {
+      color: black;
+      font-size: 34px;
+      margin-left: 20px
+    }
+    h3 {
+      color: black;
+      font-size: 30px;
+      margin-left: 30px
+    }
+    h4 {
+      color: black;
+      font-size: 26px;
+      margin-left: 40px
+    }
+    h5 {
+      color: black;
+      font-size: 22px;
+      margin-left: 50px
+    }
+    p {
+      text-align: justify;
+      width: 90%;
+      font-family: Arial;
+      font-size: 16px;
+      margin-left: 60px
+    }
+   
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #45484bfb;
+      border-radius: 10px; /* adicionado para arredondar os cantos */
+    }
+    .menu li {
+      float: left;
+    }
+    .menu li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .menu li a:hover {
+      background-color: #bed0d1;
+    }
+    body {
+      background-image: linear-gradient(to right, white, gray);
+      background-size: cover;
+    }
+
+    #respiratorio {
+        position: relative; /* adicionado para posicionar o pseudo-elemento */
+        border: 1px solid rgb(88, 103, 105);
+        border-radius: 5px;
+        width: 95%;
+      }
+      
+      #respiratorio::before {
+        content: ""; /* necessário para criar o pseudo-elemento */
+        position: absolute; /* posiciona o pseudo-elemento sobre a div respiratório */
+        top: 0; /* alinha o topo do pseudo-elemento com o topo da div respiratório */
+        left: 0; /* alinha a esquerda do pseudo-elemento com a esquerda da div respiratório */
+        width: 100%; /* define a largura do pseudo-elemento igual à da div respiratório */
+        height: 100%; /* define a altura do pseudo-elemento igual à da div respiratório*/
+        background-image: url('imgs/pulmao-removebg-preview.png'); /* define a imagem de fundo do pseudo-elemento */
+        background-size: 100%; /* ajusta o tamanho da imagem para cobrir toda a div respiratório */
+        background-repeat: no-repeat; /* evita que a imagem se repita */
+        opacity: 0.3; /* define a opacidade da imagem */
+        z-index: -1; /* coloca o pseudo-elemento atrás da div respiratório */
+      }
+      #nervoso {
+        position: relative; /* adicionado para posicionar o pseudo-elemento */
+        border: 1px solid rgb(88, 103, 105);
+        border-radius: 5px;
+        width: 95%;
+      
+      }
+      
+      #nervoso::before {
+        content: ""; /* necessário para criar o pseudo-elemento */
+        position: absolute; /* posiciona o pseudo-elemento sobre a div respiratório */
+        top: 0; /* alinha o topo do pseudo-elemento com o topo da div respiratório */
+        left: 0; /* alinha a esquerda do pseudo-elemento com a esquerda da div respiratório */
+        width: 100%; /* define a largura do pseudo-elemento igual à da div respiratório */
+        height: 100%; /* define a altura do pseudo-elemento igual à da div respiratório */
+        background-image: url('imgs/neoronio.png'); /* define a imagem de fundo do pseudo-elemento */
+        background-size: 150%; /* ajusta o tamanho da imagem para cobrir toda a div respiratório */
+        background-repeat: no-repeat; /* evita que a imagem se repita */
+        opacity: 0.7; /* define a opacidade da imagem */
+        z-index: -1; /* coloca o pseudo-elemento atrás da div respiratório */
+      }
+      #muscular {
+        position: relative; /* adicionado para posicionar o pseudo-elemento */
+        border: 1px solid rgb(88, 103, 105);
+        border-radius: 5px;
+        width: 95%;
+      }
+      
+      #muscular::before {
+        content: ""; /* necessário para criar o pseudo-elemento */
+        position: absolute; /* posiciona o pseudo-elemento sobre a div respiratório */
+        top: 0; /* alinha o topo do pseudo-elemento com o topo da div respiratório */
+        left: 0; /* alinha a esquerda do pseudo-elemento com a esquerda da div respiratório */
+        width: 100%; /* define a largura do pseudo-elemento igual à da div respiratório */
+        height: 100%; /* define a altura do pseudo-elemento igual à da div respiratório */
+        background-image: url('imgs/muscular-removebg-preview.png'); /* define a imagem de fundo do pseudo-elemento */
+        background-size: 100%; /* ajusta o tamanho da imagem para cobrir toda a div respiratório */
+        background-repeat: no-repeat; /* evita que a imagem se repita */
+        opacity: 0.3; /* define a opacidade da imagem */
+        z-index: -1; /* coloca o pseudo-elemento atrás da div respiratório */
+      }
+      #digestorio {
+        border: 1px solid rgb(88, 103, 105);
+        border-radius: 5px;
+        width: 95%;
+      }
+  </style>
+</head>
+<body>
+  <h1>Biossistemas do Corpo Humano</h1>
+  <ul class="menu">
+    <li><a href="#respiratorio">Sistema Respiratório</a></li>
+    <li><a href="#nervoso">Sistema Nervoso</a></li>
+    <li><a href="#muscular">Sistema Muscular</a></li>
+    <li><a href="#digestorio">Sistema Digestório</a></li>
+  </ul>
+  <p>
+
+
+    
+  </p>
+  <div class="container">
+    <div id="respiratorio">
+      <h2>Sistema Respiratório</h2>
+      <p>O sistema respiratório é responsável por fornecer oxigênio ao corpo e eliminar dióxido de carbono, um subproduto do metabolismo celular. Consiste em órgãos e estruturas que permitem a troca gasosa entre o corpo e o ambiente.</p>
+      <center><img src="imgs/sistemaRespiratorio.png" alt="Sistema Respiratório"></center>
+      <h3>Nariz e Cavidade Nasal</h3>
+      <P>O sistema respiratório começa nas narinas, onde o ar entra no corpo. O nariz é responsável por filtrar, umedecer e aquecer o ar que entra nas vias respiratórias.</P>
+      <h3>Faringe</h3>
+      <P>A faringe é um canal que conecta o nariz e a boca à laringe. Ela desempenha um papel na passagem de ar para a laringe e de alimentos para o esôfago.</P>
+      <h3>Laringe</h3>
+      <p>A laringe é uma estrutura que contém as cordas vocais e desempenha um papel fundamental na produção da voz. Também serve como uma passagem para o ar entrar na traquéia.</p>
+      <h3>Traquéia:</h3>
+      <p>A traquéia é um tubo que conecta a laringe aos pulmões. Ela é constituída por anéis cartilaginosos que fornecem suporte e mantêm a traquéia aberta. A traquéia se divide em dois tubos menores chamados brônquios.</p>
+      <h3>Brônquios e Brônquios Menores</h3>
+      <p>Os brônquios são tubos que transportam o ar para dentro dos pulmões. Os brônquios se ramificam em brônquios menores, que por sua vez se ramificam em bronquíolos.</p>
+      <h3>Bronquíolos e Alvéolos</h3>
+      <p>Os bronquíolos são tubos menores que se ramificam ainda mais, formando estruturas chamadas alvéolos. Os alvéolos são pequenos sacos de ar, revestidos por uma fina camada de tecido, onde ocorre a troca gasosa.</p>
+      <h3>Troca Gasosa</h3>
+      <p>Nos alvéolos, o oxigênio do ar inalado passa dos alvéolos para os capilares pulmonares e é transportado para a corrente sanguínea, onde é distribuído para todas as células do corpo. Ao mesmo tempo, o dióxido de carbono, que é um resíduo do metabolismo celular, é liberado das células para a corrente sanguínea e, em seguida, transferido dos capilares pulmonares para os alvéolos, onde é expelido do corpo ao ser exalado.</p>
+      <h3>Músculos Respiratórios</h3>
+      <p>A respiração é controlada pelos músculos respiratórios, principalmente o diafragma e os músculos intercostais. O diafragma se contrai e se relaxa para ajudar na expansão e compressão dos pulmões, permitindo a entrada e saída de ar.</p>
+      <p>O sistema respiratório é vital para o fornecimento de oxigênio necessário para o funcionamento adequado do corpo. Qualquer comprometimento do sistema respiratório, como doenças respiratórias, pode afetar a respiração e a saúde geral. É importante manter o sistema respiratório saudável, evitando a exposição a poluentes, como fumaça do tabaco e poluição do ar, e adotando um estilo de vida saúde.</p>
+      <h3>Patologia do sistema respiratório: ASMA</h3>
+      <p>A asma é uma doença crônica do sistema respiratório que afeta as vias aéreas, tornando-as inflamadas e estreitadas. Isso leva a episódios recorrentes de falta de ar, sibilância (chiado no peito), tosse e sensação de aperto no peito. A asma pode variar, desde casos leves e ocasionais até formas mais graves e persistentes.</p>
+      <h4>Principais características da asma</h4>
+      <p> Inflamação das Vias Aéreas: Na asma, as vias aéreas ficam inflamadas devido a uma resposta imunológica exagerada a estímulos como alérgenos, irritantes ou infecções respiratórias. Essa inflamação leva ao estreitamento dos brônquios e causa dificuldade na passagem do ar.</p>
+      <center><img src="imgs/asma-removebg-preview.png" alt="Sistema Respiratório"></center>
+      <h4>Sintomas Respiratórios:</h4>
+      <h5>Falta de ar</h5>
+      <p>Sensação de dificuldade respiratória, como se estivesse lutando para respirar normalmente.</p>
+      <h5>Sibilância</h5>
+      <p>Chiado no peito, um som agudo durante a respiração, que pode ser audível durante os episódios de asma.</p>
+      <h5>Tosse</h5>
+      <p>Geralmente é uma tosse seca e persistente, especialmente à noite ou no início da manhã.</p>
+      <h5>Aperto no peito</h5>
+      <p>Sensação de pressão ou aperto no peito, como se tivesse um peso sobre ele.</p>
+      <h4>Desencadeadores:</h4>
+      <h5>Alergênicos:</h5> <p>Pólen, ácaros, pelos de animais, mofo, entre outros.</p>
+      <h5>Irritantes do ar:</h5><p>Fumaça de cigarro, poluição, produtos químicos, perfumes fortes, entre outros.</p>
+      <h5>Infecções respiratórias:</h5> <p>Resfriados, gripes e infecções virais ou bacterianas.</p>
+      <h5>Exercício físico:</h5> <p>Esforço físico pode desencadear sintomas em algumas pessoas com asma.</p>
+      <h5>Mudanças climáticas:</h5> <p>Ar frio e seco, ou ar quente e úmido, podem afetar as vias aéreas.</p>
+      <h5>Emoções e estresse:</h5> <p>Ansiedade, estresse emocional e risos intensos também podem desencadear sintomas.</p>
+      <h4>Diagnóstico e Tratamento</h4>
+      <p>O diagnóstico da asma geralmente envolve avaliação dos sintomas, histórico médico e exames como espirometria, que mede a função pulmonar. O objetivo principal do tratamento da asma é controlar os sintomas e prevenir as crises. O tratamento pode incluir:</p>
+      <h5>Medicamentos de alívio rápido:</h5>
+      <p>São de curta duração, como os beta-agonistas, que ajudam a relaxar os músculos das vias aéreas, aliviando a falta de ar e a sibilância durante as crises.</p>
+      <center><img src="imgs/WhatsApp Image 2023-06-15 at 09.30.06.jpeg" alt="Sistema Respiratório"></center>
+      
+      <p>Medicamentos de controle ou manutenção: São antiinflamatórios, como corticóides inalados, que reduzem a inflamação das vias aéreas e ajudam a prevenir os sintomas em longo prazo.</p>
+    </div>
+    <p></p>
+    <div id="nervoso">
+      <h2>Sistema Nervoso</h2>
+      <p>Pode ser dividido em duas porções:</p>
+      <p>•Sistema nervoso central ou SNC sendo formado pelo encéfalo e medula espinhal.</p>
+      <p>•Sistema nervoso periférico: formado pelos nervos, gânglios e terminações nervosas.</p>
+      <p>Além disso, sistema nervoso é composto por um tecido denominado tecido nervoso, o qual possui como tipos celulares os neurônios e as chamadas células de glia.</p>
+      <p>Também, os neurônios são responsáveis pela propagação do impulso nervoso e apresentam como partes básicas o corpo celular, onde está localizado o núcleo, e dois tipos de prolongamentos, os axônios e os dendritos. De acordo com a função desempenhada, os neurônios podem ser classificados em dois grupos básicos: sensitivos ou aferentes (levam impulsos para o sistema nervoso) e motores ou eferentes (levam impulsos para outras partes, como músculos e glândulas).</p>
+      <p> É importante ressaltar que, grupo de células chamado células da glia está relacionado com várias funções, como nutrição e regulação do funcionamento dos neurônios. Como por exemplo as células ependimárias, astrócitos, oligodendrócitos, microglia e células de Schwann são células da glia.</p>
+      <p>Sistema nervoso central: É responsável por receber e processar informações. Sendo constituído pelo encéfalo e medula espinal, que estão protegido pelo crânio e coluna vertebral.</p>
+      <center><img src="imgs/nervoso.jpg" alt="Sistema Nervoso"></center>
+      <p>É importante ressaltar que essas estruturas são reforçadas por três lâminas conjuntivas, denominadas de meninges. São elas: dura-máter, aracnoide e pia-máter.</p>
+      <h3>ENCÉFALO</h3>
+      <p>Em primeiro plano, encéfalo é constituído pelo cérebro, cerebelo e tronco encefálico. Esse último é formado pelo mesencéfalo, ponte e bulbo raquidiano.</p>
+      <h4>Cérebro</h4>
+      <p>Também, o cérebro é constituído pelos hemisférios cerebrais (telencéfalo) e diencéfalo. Esses primeiros são unidos pelo corpo caloso: uma estrutura constituída de fibras nervosas. Em cada uma dessas duas regiões existem divisões de determinadas áreas, delimitadas por sulcos mais profundos: os lobos frontais, parietais, temporais e occipitais. Estes se dão aos pares (um em cada hemisfério) e cada tipo coordena uma função específica - como a audição, ligada aos lobos temporais.</p>
+      <p>Além disso, a região mais externa do cérebro é denominada de córtex cerebral, que é rico em corpos de neurônios, em razão de sua tonalidade, era denominado de “substância cinzenta”. O córtex possui áreas sensoriais, motoras e associativas (interpretação de sensações e elaboração de planos de ação).</p>
+      <p>A região mais interna do cérebro, rica em dendritos e axônios, geralmente revestidos por mielina, é a “substância branca”, que leva informações ao córtex e recebe dele instruções acerca do funcionamento do corpo.</p>
+      <p>As mensagens sensoriais, exceto olfativas, passam antes pelo tálamo. Outra estrutura, localizada sob o tálamo, é o hipotálamo, que ativa glândulas produtoras de hormônios e exerce um papel muito importante em relação à homeostase do organismo. Há ainda o epitálamo, que é formado basicamente pela glândula pineal, é responsável pelo controle dos ciclos circadianos, influenciando diretamente nosso relógio biológico, e produz a melatonina. Tálamo, hipotálamo e epitálamo constituem o diencéfalo.</p>
+      <h4>Cerebelo</h4>
+      <p>Também, o cerebelo coordena os movimentos e a postura corporal, mantendo nosso equilíbrio e permitindo que façamos determinadas tarefas, como andar de bicicleta. Isso só é possível porque ele recebe diversas informações do encéfalo e medula espinal. Além disso, possui substância cinzenta, externamente, e substância branca, internamente.</p>
+      <h4> Tronco encefálico</h4>
+      <p>Ademais, tronco encefálico é formado apenas por substância branca e é composto pelo mesencéfalo, ponte e bulbo raquidiano:</p>
+      <p>⇒ O mesencéfalo recebe e coordena informações relativas ao tônus muscular e postura corporal. É também responsável pelos reflexos visuais e auditivos.</p>
+      <p>⇒ A ponte também auxilia em relação ao tônus muscular, postura e equilíbrio. Além disso, controla a respiração e coordena a movimentação do corpo, inclusive dos olhos e pescoço.</p>
+      <p>⇒ O bulbo raquidiano, também chamado de medula oblonga, participa de processos vitais, como respiração, batimentos cardíacos e vasoconstrição.</p>
+      <h3>MEDULA</h3>
+      <p>Ainda mais, a medula espinal localiza-se em nossas vértebras, na região onde elas são perfuradas. Também, ao contrário do cérebro e cerebelo, a camada cinzenta da medula encontra-se mais internamente que a camada branca.</p>
+      <p>Além disso, ela é quem recebe primeiramente as informações transmitidas pelas mais diferentes regiões do corpo. Ademais, as informações oriundas deste passam pela medula e, depois, são conduzidas às regiões específicas.</p>
+      <p>Além disso, a medula é responsável por reflexos rápidos em resposta a situações de emergência, como retirar imediatamente a mão da tomada ao receber choque. Tudo isso acontece nessa região graças aos trinta e um nervos espinhais que ela apresenta.</p>
+      <p>Sistema nervoso periférico ou SNP é o sistema responsável por conduzir informações. Constituído por nervos e gânglios.</p>
+      <h3>Nervos</h3>
+      <p>Sobretudo, os nervos são cordões formados por fibras nervosas dispostas paralelamente e envoltas por tecido conjuntivo.</p>
+      <p>Ademais, os nervos podem ser espinhais (ou espinais) ou cranianos. Esses últimos unem-se com o encéfalo, e os nervos espinhais estão unidos à medula espinhal. Existem doze pares de nervos  cranianos que são responsáveis por inervar principalmente estruturas da cabeça e do pescoço. São nervos cranianos como por exemplo: nervo olfatório, nervo óptico, nervo oculomotor, nervo troclear, nervo abducente, nervo trigêmeo, nervo facial, nervo vestíbulo-coclear, nervo glossofaríngeo, nervo vago, nervo acessório e nervo hipoglosso.</p>
+      <p>Também, os nervos espinhais, por sua vez, inervam o tronco, membros e algumas regiões da cabeça. Além disso, estão conectados à medula e partem dos forames intervertebrais da coluna. No total, são 31 pares de nervos espinhais, que recebem as denominações de cervicais, torácicos, lombares, sacrais e coccígeos.</p>
+      <p>Por fim, na porção terminal dos nervos, é possível observar as terminações nervosas, as quais podem ser sensitivas ou motoras. As sensitivas são aquelas que conseguem captar estímulos, tais como calor, pressão e luz. Já as motoras terminam nos músculos e glândulas e funcionam de maneira parecida com as sinapses entre neurônios</p>
+      <h3>Gânglios</h3>
+      <p>Ademais, os gânglios são regiões dilatadas que estão localizadas nos caminhos percorridos pelos nervos. Eles são formados por acúmulos de corpos celulares e estão situados fora do SNC.</p>
+      <h3>Patologia do sistema nervoso - Doença de Parkinson</h3>
+      <h4>O que é a doença de Parkinson?</h4>
+      <p>Primeiramente, a Doença de Parkinson foi descoberta há mais de 200 anos e é a segunda patologia degenerativa, crônica e progressiva do sistema nervoso central mais frequente no mundo, ficando atrás da Doença de Alzheimer. Também, por isso, a maioria dos cientistas acredita que seja causada por uma combinação complexa de fatores genéticos e ambientais.</p>
+      <p>Também, o Parkinson é um distúrbio do movimento progressivo (avança com o tempo) e degenerativo, já que causa um declínio contínuo das células produtoras de dopamina na região encefálica conhecida como substância negra. Então devido a redução da dopamina, que ajuda na realização dos movimentos voluntários do corpo de forma automática, o paciente vai perdendo a capacidade de controlar ou iniciar o movimento.</p>
+      <center><img src="imgs/parkison.jpg" alt="Parkinson"></center>
+      <p>Além disso, entre alguns dos sintomas motores que podem tornar as atividades da vida cotidiana desafiadoras estão: tremor, movimentos lentos, rigidez, instabilidade postural, passos aleatórios e problemas de dicção. Além disso,  mesmo que a doença de Parkinson seja um transtorno do movimento, os sintomas não motores podem ter um impacto muito grande na qualidade de vida, entre eles: diminuição do olfato, depressão ou problemas de humor, dor, insônia, disfunção da bexiga ou do intestino e fadiga.</p>
+      <h4>Diagnóstico</h4>
+      <p>O diagnóstico é clínico e geralmente é feito após o paciente procurar um neurologista com sintomas iniciais, como: movimentos mais lentos, tremores nas extremidades das mãos e diminuição do tamanho das letras ao escrever. Também se necessário, o médico poderá também indicar exames como a SPECT-Scan (tomografia por emissão de fóton único), para verificar a quantidade de dopamina no cérebro.</p>
+      <h4>Tratamentos</h4>
+      <p>Ao ser diagnosticado com a Doença de Parkinson, seus médicos discutirão as opções de tratamento disponíveis para você. Embora não tenha cura, os sintomas podem ser controlados, melhorando sua qualidade de vida.</p>
+    </div>
+    <p></p>
+    <div id="muscular">
+      <h2>Sistema Muscular</h2>
+      <p>O sistema muscular é responsável pelo movimento do corpo humano, dando-nos a habilidade de nos movermos, manter a postura, falar e realizar uma variedade de outras atividades. Ele é composto por músculos, tecidos conjuntivos, vasos sanguíneos e nervos.</p>
+      <center><img src="imgs/sistema-muscular-removebg-preview.png" alt="Sistema Muscular"></center>
+      <h3>Principais funções do sistema muscular:</h3>
+      <h4>Movimento:</h4>
+      <p>Os músculos são responsáveis ​​por todos os movimentos voluntários e involuntários do corpo. Os músculos esqueléticos, também conhecidos como músculos estriados, são responsáveis ​​pelo movimento voluntário, enquanto os músculos lisos e cardíacos estão envolvidos no movimento involuntário.</p>
+      <h4>Postura e suporte:</h4>
+      <p>Os músculos ajudam a manter a postura corporal e fornecem suporte aos ossos, articulações e órgãos internos.</p>
+      <h4>Produção de calor:</h4>
+      <p> A contração muscular produz calor, o que ajuda a manter a temperatura corporal adequada</p>
+      <h4>Proteção</h4>
+      <p>Os músculos envolvem órgãos vitais, como o coração, protegendo-os contra lesões.</p>
+      <h3>Tipos de músculos:</h3>
+      <h4>Músculos esqueléticos:</h4>
+      <p>São os músculos voluntários que estão ligados aos ossos por meio de tendões. Eles são responsáveis ​​pelo movimento do esqueleto e pela realização de atividades físicas.</p>
+      <h4>Músculos lisos:</h4>
+      <p>São músculos involuntários encontrados nas paredes dos órgãos internos, como o estômago, intestinos, vasos sanguíneos e vias respiratórias. Eles desempenham um papel na contração desses órgãos e no controle do fluxo sanguíneo.</p>
+      <h4>Músculo cardíaco:</h4>
+      <p>É um tipo especializado de músculo encontrado apenas no coração. É involuntário e se contrai de forma rítmica para bombear sangue para o resto do corpo.</p>
+      <h3>Estrutura do músculo esquelético:</h3>
+      <h4>Fibras musculares:</h4>
+      <p>Os músculos esqueléticos são compostos por fibras musculares, que são células alongadas capazes de se contrair. Essas fibras são organizadas em feixes chamados fascículos.</p>
+      <h4>Miofibrilas</h4>
+      <p>As miofibrilas são estruturas cilíndricas presentes no citoplasma das fibras musculares e são compostas por proteínas contráteis chamadas actina e miosina.</p>
+      <h4>Unidade motora:</h4>
+      <p>É uma combinação de um neurônio motor e as fibras musculares que ele controla. Uma unidade motora pode consistir em várias fibras musculares, dependendo da precisão e da força necessárias para uma determinada ação.</p>
+      <h3>Cuidados com o sistema muscular:</h3>
+      <p>Exercício físico: O exercício regular é essencial para manter a saúde e a força muscular. O treinamento de resistência, como levantamento de pesos, fortalece os músculos, enquanto o exercício aeróbico, como a corrida, melhora a resistência muscular.</p>
+      <p>Alimentação adequada: Uma dieta equilibrada, rica em proteínas, é importante para fornecer os nutrientes</p>
+      <h3>Patologia sistema muscular - Distrofias musculares</h3>
+      <p>Distrofias musculares são doenças genéticas ligadas ao cromossomo X,que promovem a degeneração progressiva da musculatura.</p>
+      <p>Distrofias musculares constituem um grupo de mais de 30 doenças genéticas, muitas delas ligadas ao cromossomo X, que afetam primariamente os músculos e provocam sua degeneração progressiva.</p>
+      <center><img src="imgs/distrofia.jpg" alt="Distrofia Muscular"></center>
+      <p>A alteração em certos genes é responsável pela falta ou baixa produção de proteínas essenciais para o desenvolvimento da musculatura. As mulheres são portadoras assintomáticas, mas os homens manifestam a doença que pode ocorrer por herança genética recessiva, por mutação nova e espontânea do gene, ou por um erro genético durante a formação da criança.</p>
+      <h4>Tipos</h4>
+      <p>Distrofia muscular de Duchenne e distrofia muscular de Becker são os tipos mais conhecidos e frequentes das distrofias musculares, mas existem outros classificados de acordo com a produção anormal de determinadas proteínas musculares.</p>
+      <p>Existem formas leves de distrofia muscular de evolução lenta que só se manifestam na vida adulta. Um exemplo é a distrofia fácio-escápulo-umeral que afeta os músculos da face e da cintura escapular, região do organismo relacionada com o funcionamento e a mobilidade do membro superior.</p>
+      <h4>Sintomas</h4>
+      <p>O quadro clínico das distrofias musculares é extremamente variável. A mutação de um gene que determina a ausência de determinada proteína pode gerar uma doença mais leve ou mais grave. Entre os sintomas principais destacam-se:</p>
+      <p>•Atrofia e fraqueza muscular progressiva;</p>
+      <p>•Retardo e comprometimento da ambulação;</p>
+      <p>•Déficit muscular progressivo e generalizado;</p>
+      <p>•Comprometimento da musculatura respiratória e cardíaca.</p>
+      <h3>Diagnóstico</h3>
+      <p>O exame de sangue para análise do DNA e a biópsia do músculo são de extrema importância para estabelecer o tipo de distrofia muscular.</p>
+      <h3>Tratamento</h3>
+      <p>O uso de corticoides (prednisona e deflazocort) revigora um pouco a força muscular e a função respiratória. A esperança, porém, está na terapia genética, talvez a única forma de tratamento possível e eficaz para cura de distrofias musculares que, nas formas graves e nas formas congênitas, impedem que a criança viva por muito tempo.</p>
+      <h3>Recomendações</h3>
+      <p>O objetivo das pesquisas com células-tronco é poder tratar de doenças como as distrofias musculares, que levam à degeneração progressiva dos músculos, por falta de uma proteína específica. Por enquanto, elas são incuráveis;</p>
+      <p>Manter criteriosamente o tratamento prescrito pelos médicos e as sessões de fisioterapia são formas de controlar um pouco a evolução dessas enfermidades;</p>
+      <p>Portanto,mais cedo do que se prevê, as pesquisas indiquem o caminho que tornará possível recompor a integridade do músculo.</p>
+    </div>
+    <p></p>
+    <div id="digestorio">
+      <h2>Sistema Digestório</h2>
+      <p>O sistema digestório é responsável pela degradação do alimento em moléculas pequenas,que são absorvíveis por as células,com isso são usadas no desenvolvimento e na manutenção do organismo e sua necessidades energéticas.</p>
+      <center><img src="imgs/digestorio.jpg" alt="Sistema Digestório"></center>
+      <h3>Órgãos do sistema digestório</h3>
+      <p>O sistema digestório humano é formado pelo trato gastrointestinal, que é composto pela boca, faringe, esôfago, estômago, intestino delgado e intestino grosso. Associadas a esses órgãos, temos as glândulas acessórias, também chamadas de glândulas associadas, que são as glândulas salivares, o fígado e o pâncreas.</p>
+      <h4>Boca</h4>
+      <p>Nessa cavidade o alimento sofrerá a ação dos dentes, que atuam garantindo que os alimentos sejam cortados, triturados e amassados. Essa etapa da digestão é chamada de digestão mecânica, por não envolver substâncias químicas que atuam no alimento. Na boca também atuam as glândulas salivares, que são responsáveis pela secreção da saliva, a qual atua na digestão química. Na saliva é encontrada a amilase salivar ou ptialina, uma enzima que atua quebrando carboidratos. O alimento, triturado e misturado à saliva, forma um aglomerado chamado bolo alimentar.</p>
+      <h4>Faringe</h4>
+      <p>A faringe é uma estrutura comum entre os sistemas digestório e respiratório, sendo uma área de transição. Esse órgão abre-se na traqueia e também no esôfago, e o alimento segue por esse último órgão.</p>
+      <h4>Esôfago</h4>
+      <p> órgão muscular que garante que o bolo alimentar seja levado, por meio de contrações da musculatura lisa, até o estômago.</p>
+      <h4>Estômago</h4>
+      <p> É um órgão que se caracteriza por ser uma porção dilatada do trato digestivo e está localizado inferiormente ao diagrama. Esse órgão pode ser dividido em: cárdia, fundo, corpo e porção pilórica. No estômago observa-se a liberação de uma substância denominada suco gástrico, o qual apresenta dois principais componentes: o ácido clorídrico e a pepsina. O ácido clorídrico ajuda a desdobrar as proteínas do alimento, facilitando a ação das enzimas. A pepsina, por sua vez, atua quebrando as proteínas em polipeptídeos menores.</p>
+      <h4>Intestino delgado</h4>
+      <p>Responsável por absorver nutrientes.  O intestino delgado é dividido em três porções: duodeno, jejuno e íleo. O duodeno é onde ocorre a junção do quimo às secreções provenientes do pâncreas, fígado e do próprio intestino delgado.</p>
+      <h4>Intestino grosso</h4>
+      <p>É a porção final do sistema digestório, formado pelo ceco, cólon ascendente, cólon transverso, cólon descendente, cólon sigmóide e reto. O intestino grosso apresenta importantes funções no processo digestivo, sendo responsável pela formação da massa fecal e reabsorção de água, processo esse que se iniciou no intestino delgado. É no intestino grosso, portanto, que as fezes são formadas. O reto termina em um estreito canal anal, que se abre no ânus.</p>
+      <h3> Patologia do sistema digestório - GASTRITE</h3>
+      <p>A gastrite é uma inflamação do revestimento interno do estômago. Pode ser aguda, quando aparece de repente e dura pouco, ou crônica, quando se instala aos poucos e leva muito tempo para ser controlada.</p>
+      <h4>Causas:</h4>
+      <p>– uso prolongado de medicamentos como aspirina ou anti-inflamatórios;<br>
+        – consumo de álcool;<br>
+        – hábito de fumar;<br>
+        – infecção pela bactéria Helicobacter pylori;<br>
+        – gastrite autoimune – ocorre quando o sistema imune produz anticorpos que agridem e destroem as células gástricas do próprio organismo.<br>
+      </p>
+      <h4>Sintomas:</h4>
+      <p>– dor de estômago intensa;<br>
+        – azia;<br>
+        – indigestão;<br>
+        – sensação de estufamento;<br>
+        – perda de apetite;<br>
+        – náusea e vômito;<br>
+        – presença de sangue nas fezes e no vômito. <br>
+        </p>
+        <h3>Diagnóstico:</h3>
+        <p>Baseia-se no exame físico e na análise da história clínica do paciente. O médico poderá solicitar exames, como: raios-X, endoscopia e biópsia.</p>
+        <h3>Tratamento</h3>
+        <p>O tratamento da gastrite tem de levar em conta a sua causa e, além dos medicamentos prescritos por o médico, é possível contornar o problema mudando a alimentação e melhorando o estilo de vida.</p>
+        <h3>Prevenção</h3>
+        <p>-respeitar os horários das refeições. <br>
+          – pequenas refeições ao longo,evitar horas em jejum; <br>
+          – mastigar bem os alimentos, pois a digestão começa na boca; <br>
+          – preferência a frutas menos ácidas, verduras e carnes magras. <br>
+          </p>
+        <h3>Evitar</h3>
+        <p>– tomar analgésicos;<br>
+          – café;<br>
+          – chá mate;<br>
+          – chocolate;<br>
+          – refrigerantes;<br>
+          – sal em excesso;<br>
+          – enlatados;<br>
+          – embutidos;<br>
+          – bebidas alcoólicas;<br>
+          – pimenta-do-reino;<br>
+          – leite e derivados;<br>
+          – frituras; <br>
+          – gorduras em excesso. <br>
+          </p>
+    </div>
+  </div>
+</body>
+</html>
+
